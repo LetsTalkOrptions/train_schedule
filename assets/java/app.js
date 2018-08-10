@@ -100,7 +100,7 @@ database.ref().on("child_added", function(childSnapshot) {
   var newRow = $("<tr>").append(
     $("<td>").text(trainNameInput),
     $("<td>").text(destinationInput),
-    $("<td>").text("ON TIME"),
+    $("<td id='onTime'>").text("ON TIME"),
     $("<td>").text(trainArrival),
     $("<td>").text(remainderMinutes),
     $("<td>").text(frequencyInput)
@@ -109,12 +109,4 @@ database.ref().on("child_added", function(childSnapshot) {
   // Append the new row to the table
   $(".table > tbody").append(newRow);
 
-
-  
-    // flightboard plugin
-    $(function () {
-        $('#basicBoard').flightboard({messages: ['FIRST MESSAGE', 'SECOND MESSAGE'],
-            lettersImage: 'flightBoardLarge.png',
-            shadingImages: ['flightBoardHigh.png', 'flightBoardShad.png']});
-    });
 })

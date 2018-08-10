@@ -1,18 +1,29 @@
-.container {
-   
+.jumbotron {
+   margin-top: 40px;
+   /* margin-bottom: 0px; */
+   padding-bottom: 10px;
+    opacity: .9;
 }
 
-#basicBoard {
+body {
+    background-image: url("../images/train2.jpg");
+    background-size: cover;
     
+}
+#title {
+    text-align: center;
+    font-size: 60px;
 }
 
 .lead {
     text-align: center;
-    margin-top: 60px;
+    margin-top: 20px;
+    font-size: 30px;
 }
 
 #currentTimeBanner {
     text-align: center;
+    font-size: 30px;
 }
 
 .masterClock {
@@ -30,4 +41,19 @@ td {
 
 #main-content {
     margin-top: 40px;
+}
+
+#onTime {
+    color: limegreen;
+}
+
+td {
+    color: rgb(233, 171, 39);
+}
+
+#main-content {
+    margin-top: 40px;
+    width: 40%;
+    text-align: center;
+    margin: auto;
 }
