@@ -1,0 +1,33 @@
+.container {
+   
+}
+
+#basicBoard {
+    
+}
+
+.lead {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#currentTimeBanner {
+    text-align: center;
+}
+
+.masterClock {
+    text-align: center;
+}
+
+th {
+    font-size: 18px;
+    text-align: center;
+}
+
+td {
+    text-align: center;
+}
+
+#main-content {
+    margin-top: 40px;
+}
