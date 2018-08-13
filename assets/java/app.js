@@ -78,6 +78,7 @@ database.ref().on("child_added", function(childSnapshot) {
     var minutesDifference = ((timeDifference/1000)/60);
     var remainder = (minutesDifference%frequencyInput);
     var minutesTil = (frequencyInput-remainder);
+    setInterval
     
     console.log("Current time is: " + currentTime);
     console.log("Start time was: " + firstTrainTimeInput);
@@ -94,6 +95,7 @@ database.ref().on("child_added", function(childSnapshot) {
     // time until next train arrives
     var remainderMinutes = (Math.round(minutesTil));
     console.log("Remainder: " + remainderMinutes);
+
     
 
   // Create the new row
