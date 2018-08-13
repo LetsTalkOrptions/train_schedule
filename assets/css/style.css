@@ -79,3 +79,8 @@ td {
     text-align: center;
     margin: auto;
 }
+
+.btn {
+    opacity: .6;
+    color: rgb(233, 171, 39);
+}

@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Train Schedule</title>
     <!-- bootstrap cdn link -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-     <!-- bootswatch -->
+    <!-- bootswatch -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.2/slate/bootstrap.min.css">
     <!-- jQuery link -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -18,7 +19,6 @@
     <!-- moment.js link -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
 
 </head>
 
@@ -36,66 +36,62 @@
         </div>
 
         <div id="tableData">
-        <table class="table">
-            <thead>
-                <tr>
+            <table class="table">
+                <thead>
+                    <tr>
 
-                    <th scope="col">TRAIN</th>
-                    <th scope="col">TO</th>
-                    <th scope="col">STATUS</th>
-                    <th scope="col">NEXT DEPARTURE</th>
-                    <th scope="col">MINUTES AWAY</th>
-                    <th scope="col">EVERY (MINS)</th>
-                
-                </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
-    </div>
+                        <th scope="col">TRAIN</th>
+                        <th scope="col">TO</th>
+                        <th scope="col">STATUS</th>
+                        <th scope="col">NEXT DEPARTURE</th>
+                        <th scope="col">MINUTES AWAY</th>
+                        <th scope="col">EVERY (MINS)</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
         <form>
             <div id="main-content">
                 <div class="header">
                     <h3 class="trainInformation">INPUT NEW TRAIN</h3>
                 </div>
                 <div class="form-group">
-                    <label for="trainName">Train Name</label>
-                    <input type="text" class="form-control" id="trainName" style="text-transform: uppercase" aria-describedby="trainName" 
-                    placeholder="Enter Name">
+                    <label for="trainName">TRAIN NAME</label>
+                    <input type="text" class="form-control" id="trainName" style="text-transform: uppercase" aria-describedby="trainName" placeholder="Enter Name">
 
                 </div>
 
                 <div class="form-group">
-                    <label for="destination">Destination</label>
+                    <label for="destination">DESTINATION</label>
                     <input type="text" class="form-control" id="destination" style="text-transform: uppercase" placeholder="Enter Destination">
                 </div>
 
                 <div class="form-group">
-                    <label for="firstTrainTime">First Train Time (HH:mm- military time)</label>
-                    <input type="number" class="form-control" id="firstTrainTime"  placeholder="12:00">
+                    <label for="firstTrainTime">FIRST TRAIN TIME (HH:mm- MILITARY TIME)</label>
+                    <input type="number" class="form-control" id="firstTrainTime" placeholder="12:00">
                 </div>
 
                 <div class="form-group">
-                    <label for="frequency">Frequency (min)</label>
+                    <label for="frequency">FREQUENCY (MIN)</label>
                     <input type="number" class="form-control" id="frequency" placeholder="Enter frequency">
                 </div>
 
-                <button type="submit" class="btn btn-primary submit">Add Train</button>
+                <button type="submit" class="btn btn-primary submit">ADD TRAIN</button>
             </div>
         </form>
 
     </div>
+
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- firebase database link -->
     <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
     <!-- Javascript file link -->
     <script src="assets/java/app.js"></script>
 
-
 </body>
-    
-   
-
-
 
 </html>
