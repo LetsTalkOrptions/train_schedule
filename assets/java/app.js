@@ -67,13 +67,14 @@ database.ref().on("child_added", function (childSnapshot) {
     console.log(frequencyInput);
 
     // time calculations
+
     var currentTime = moment().format("HH:mm");
     startTime = moment(firstTrainTime);
     var timeDifference = moment() - moment(firstTrainTimeInput, "HH:mm");
     var minutesDifference = ((timeDifference / 1000) / 60);
     var remainder = (minutesDifference % frequencyInput);
     var minutesTil = (frequencyInput - remainder);
-    setInterval
+
 
     // log time calculations
     console.log("Current time is: " + currentTime);
@@ -108,3 +109,16 @@ database.ref().on("child_added", function (childSnapshot) {
     $(".table > tbody").append(newRow);
 
 })
+
+function updatePage() {
+        currentTime,
+        timeDifference,
+        minutesDifference,
+        remainder,
+        minutesTil
+}
+
+window.setInterval(updatePage, 10000);
+
+
+updatePage();
